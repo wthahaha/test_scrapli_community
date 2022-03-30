@@ -29,7 +29,7 @@ cisco_device = {
     "auth_secondary": os.getenv("cisco_auth_secondary", "xxxx"),
     "auth_strict_key": False,
     "platform": os.getenv("cisco_device_type", "cisco_iosxe"),
-    "transport": "system",
+    "transport": "ssh2",
     # transport_options指定额外的ssh连接参数
     "transport_options": {"open_cmd": [
         "-o", "KexAlgorithms=+diffie-hellman-group1-sha1",
